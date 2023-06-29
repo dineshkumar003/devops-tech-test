@@ -14,4 +14,5 @@ RUN pip3 install -r requirements.txt
 COPY . /app
 
 # Configure the container to run in an executed manner
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=1234"]
+EXPOSE 8080
+CMD ["python3","hello.py"]
